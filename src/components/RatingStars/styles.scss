@@ -1,0 +1,19 @@
+@import "../../theme/exports";
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.star {
+    fill: #e3e3e3;
+}
+
+.active {
+    fill: $color-primary;
+}

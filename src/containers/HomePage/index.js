@@ -1,5 +1,6 @@
 import AccommodationThumbnail from "components/AccommodationThumbnail"
 import DropdownButton from "components/DropdownButton"
+import RatingStars from "components/RatingStars"
 import Tag from "components/Tag"
 import useAccommodations from "hooks/apis/useAccommodations"
 import React from "react"
@@ -19,6 +20,7 @@ const HomePage = () => {
                 Tout comportement discriminatoire ou de perturbation du
                 voisinage entraînera une exclusion de notre plateforme.
             </DropdownButton>
+            <RatingStars rating={4} />
         </div>
     )
 }
