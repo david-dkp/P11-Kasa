@@ -1,3 +1,4 @@
+import AccommodationThumbnail from "components/AccommodationThumbnail"
 import Tag from "components/Tag"
 import useAccommodations from "hooks/apis/useAccommodations"
 import React from "react"
@@ -8,6 +9,10 @@ const HomePage = () => {
     return (
         <div>
             <Tag tag={"tag-name"} />
+            <AccommodationThumbnail
+                image="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+                name="Titre de la location"
+            />
         </div>
     )
 }
