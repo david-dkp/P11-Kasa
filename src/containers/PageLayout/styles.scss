@@ -1,0 +1,36 @@
+@import "../../index.scss";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    background-color: white;
+
+    img {
+        height: 3.5rem;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        list-style: none;
+        font-size: 1.5em;
+
+        .link {
+            color: $color-primary;
+            text-decoration: none;
+        }
+        .active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.page-layout-container {
+    max-width: 1150px;
+    width: 100%;
+    padding-inline: 1rem;
+    margin: 0 auto;
+}
