@@ -16,7 +16,7 @@ $content-background-color: #f7f7f7;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: $content-padding 0.5rem;
+    padding-inline: $content-padding 0.7rem;
     padding-block: 0.5rem;
     color: white;
     background-color: $color-primary;
@@ -30,4 +30,9 @@ $content-background-color: #f7f7f7;
     border-bottom-right-radius: $border-radius;
     padding: 1.5rem $content-padding;
     color: $color-primary;
+}
+
+.dropdown-container__button__toggle-icon {
+    fill: white;
+    height: 1rem;
 }

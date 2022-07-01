@@ -17,7 +17,11 @@ const DropdownButton = ({ title, children, ...otherProps }) => {
                 onClick={handleButtonClick}
             >
                 <span>{title}</span>
-                {isOpen ? <ArrowUpIcon /> : <ArrowDownIcon />}
+                {isOpen ? (
+                    <ArrowUpIcon className="dropdown-container__button__toggle-icon" />
+                ) : (
+                    <ArrowDownIcon className="dropdown-container__button__toggle-icon" />
+                )}
             </button>
             {isOpen && (
                 <div className="dropdown-container__content">{children}</div>

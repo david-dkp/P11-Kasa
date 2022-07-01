@@ -14,7 +14,7 @@ header {
     padding-inline: 1rem;
 
     .logo-img {
-        transform: scale(0.7);
+        height: 3rem;
         fill: $color-primary;
     }
 
@@ -62,7 +62,7 @@ footer {
     }
 
     .logo-img {
-        transform: scale(0.7);
+        height: 2rem;
         fill: white;
     }
 }

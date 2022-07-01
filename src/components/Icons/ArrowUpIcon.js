@@ -2,8 +2,7 @@ import * as React from "react"
 
 const ArrowUpIcon = (props) => (
     <svg
-        width={24}
-        height={15}
+        viewBox="0 0 24 15"
         fill="#fff"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
