@@ -1,9 +1,13 @@
+import Tag from "components/Tag"
+import useAccommodations from "hooks/apis/useAccommodations"
 import React from "react"
 
 const HomePage = () => {
+    const accommodations = useAccommodations()
+
     return (
         <div>
-            <h1>Hosdfsdfme Page</h1>
+            <Tag tag={"tag-name"} />
         </div>
     )
 }
