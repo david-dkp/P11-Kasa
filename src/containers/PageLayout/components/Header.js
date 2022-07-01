@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom"
-import Logo from "assets/logo.svg"
+import LogoIcon from "components/Icons/LogoIcon"
 
 const Header = () => {
     const location = useLocation()
     return (
         <header>
             <Link className="home-logo-link" to={"/"}>
-                <img src={Logo} alt="Kasa logo" />
+                <LogoIcon className="logo-img" alt="Kasa logo" />
             </Link>
             <ul>
                 <li>

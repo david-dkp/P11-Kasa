@@ -1,14 +1,21 @@
 @import "../../index.scss";
 
+$content-max-width: 1550px;
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 1rem;
     background-color: white;
+    max-width: $content-max-width;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
 
-    img {
-        height: 3.5rem;
+    .logo-img {
+        transform: scale(0.7);
+        fill: $color-primary;
     }
 
     ul {
@@ -25,12 +32,47 @@ header {
         .active {
             text-decoration: underline;
         }
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 1.3em;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    color: white;
+    background-color: black;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 2.5rem 1.5rem;
+
+    @media (max-width: $breakpoint-md) {
+        padding-block: 2.5rem;
+        gap: 1.3rem;
+    }
+
+    p {
+        font-size: 1.2em;
+        @media (max-width: $breakpoint-md) {
+            font-size: 1em;
+        }
+    }
+
+    .logo-img {
+        transform: scale(0.7);
+        fill: white;
     }
 }
 
 .page-layout-container {
-    max-width: 1150px;
-    width: 100%;
-    padding-inline: 1rem;
     margin: 0 auto;
+
+    main {
+        max-width: $content-max-width;
+        width: 100%;
+        padding-inline: 1rem;
+    }
 }
