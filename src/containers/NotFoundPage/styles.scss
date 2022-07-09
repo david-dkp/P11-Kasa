@@ -1,0 +1,34 @@
+@import "../../index.scss";
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-primary;
+    min-height: 75vh;
+    justify-content: center;
+
+    .not-found__title {
+        font-size: 9em;
+        font-weight: bold;
+    }
+
+    .not-found__description {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .not-found__home-link {
+        margin-top: 6rem;
+        font-size: 0.9rem;
+        color: $color-primary;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 0.7rem;
+
+        .not-found__title {
+            font-size: 6em;
+        }
+    }
+}
