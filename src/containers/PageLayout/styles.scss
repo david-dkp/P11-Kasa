@@ -1,6 +1,6 @@
 @import "../../index.scss";
 
-$content-max-width: 1550px;
+$content-max-width: 1250px;
 
 header {
     display: flex;
@@ -73,6 +73,7 @@ footer {
     main {
         max-width: $content-max-width;
         width: 100%;
+        margin-inline: auto;
         padding-inline: 1rem;
     }
 }
