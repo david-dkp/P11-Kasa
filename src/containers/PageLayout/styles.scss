@@ -40,7 +40,8 @@ header {
         }
 
         @media (max-width: $breakpoint-md) {
-            font-size: 1.3em;
+            font-size: 1.2em;
+            text-transform: uppercase;
         }
     }
 }

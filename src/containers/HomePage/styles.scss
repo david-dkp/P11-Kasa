@@ -1,3 +1,5 @@
+@import "../../index.scss";
+
 $section-border-radius: 25px;
 
 .container {
@@ -14,6 +16,11 @@ $section-border-radius: 25px;
     background-color: #f6f6f6;
     border-radius: $section-border-radius;
     padding: 2rem;
+
+    @media (max-width: $breakpoint-md) {
+        background: none;
+        padding: 0;
+    }
 }
 
 .accommodation-link {
@@ -25,6 +32,10 @@ $section-border-radius: 25px;
     height: 200px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 
     .banner__image {
         position: absolute;
@@ -46,14 +57,14 @@ $section-border-radius: 25px;
     }
 
     .banner__title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         color: white;
-        font-size: 2rem;
+        font-size: 2em;
         font-weight: lighter;
-        text-align: center;
         z-index: 1;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        height: 150px;
+        font-size: 0.8rem;
     }
 }
