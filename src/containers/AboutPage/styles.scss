@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-inline: 4rem;
+
+    @media (max-width: $breakpoint-md) {
+        padding-inline: 0;
+    }
+}

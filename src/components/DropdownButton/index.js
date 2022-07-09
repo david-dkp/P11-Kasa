@@ -11,7 +11,11 @@ const DropdownButton = ({ title, children, ...otherProps }) => {
     }, [setIsOpen])
 
     return (
-        <div className="dropdown-container" {...otherProps}>
+        <div
+            aria-expanded={isOpen}
+            className="dropdown-container"
+            {...otherProps}
+        >
             <button
                 className="dropdown-container__button"
                 onClick={handleButtonClick}
