@@ -2,7 +2,6 @@ import AccommodationThumbnail from "components/AccommodationThumbnail"
 import { Link } from "react-router-dom"
 import HomeBackgroundUrl from "assets/home-background.png"
 import "../styles.scss"
-import Carousel from "components/Carousel"
 
 const HomePage = ({ accommodations }) => {
     return (
@@ -31,7 +30,6 @@ const HomePage = ({ accommodations }) => {
                     </Link>
                 ))}
             </div>
-            <Carousel images={accommodations[0].pictures} />
         </div>
     )
 }

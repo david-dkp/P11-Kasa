@@ -1,5 +1,7 @@
+import useAccommodations from "./useAccommodations"
+
 const useAccommodation = (id) => {
-    const accommodations = useAccommodation()
+    const accommodations = useAccommodations()
     return accommodations.find((accommodation) => accommodation.id === id)
 }
 

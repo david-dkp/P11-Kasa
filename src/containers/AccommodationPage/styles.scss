@@ -1,0 +1,117 @@
+@import "../../index.scss";
+
+.accommodation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+
+.accommodation__carousel {
+    height: 300px;
+}
+
+.accommodation__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: $color-primary;
+}
+
+.accommodation__header__left {
+    display: flex;
+    flex-direction: column;
+
+    .accommodation__header__left__title {
+        font-weight: 500;
+    }
+
+    .accommodation__header__left__tags {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        margin-top: 1em;
+        font-size: 0.8em;
+    }
+}
+
+.accommodation__header__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .accommodation__header__right__profile {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        .accommodation__header__right__profile__picture__image {
+            border-radius: 999px;
+            object-fit: cover;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+        }
+    }
+
+    .accommodation__header__right__rating {
+        font-size: 0.9em;
+    }
+}
+
+.accommodation__content {
+    display: flex;
+    gap: 2rem;
+
+    & > * {
+        flex: 1;
+    }
+}
+
+.accommodation__content__equipments {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+@media (max-width: $breakpoint-md) {
+    .accommodation {
+        gap: 1rem;
+    }
+
+    .accommodation__header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .accommodation__header__right {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .accommodation__header {
+        font-size: 0.9em;
+
+        .accommodation__header__left {
+            .accommodation__header__left__title {
+                font-size: 1.5em;
+            }
+        }
+
+        .accommodation__header__right {
+            .accommodation__header__right__rating {
+                font-size: 0.8em;
+            }
+            .accommodation__header__right__profile__picture__image {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+
+    .accommodation__content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

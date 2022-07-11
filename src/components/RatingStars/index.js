@@ -1,7 +1,7 @@
 import StarIcon from "components/Icons/StarIcon"
 import "./styles.scss"
 
-const RatingStars = ({ rating }) => {
+const RatingStars = ({ rating, className }) => {
     const stars = []
 
     for (let i = 0; i < 5; i++) {
@@ -13,7 +13,7 @@ const RatingStars = ({ rating }) => {
             />
         )
     }
-    return <div className="rating-stars">{stars}</div>
+    return <div className={`rating-stars ${className}`}>{stars}</div>
 }
 
 export default RatingStars
