@@ -29,20 +29,22 @@ const Carousel = ({ images }) => {
                 src={images[currentImage]}
                 alt=""
             />
-            <div className="carousel__controls">
-                <button
-                    className="carousel__controls__button"
-                    onClick={handleClickLeft}
-                >
-                    <ArrowLeftIcon />
-                </button>
-                <button
-                    className="carousel__controls__button"
-                    onClick={handleClickRight}
-                >
-                    <ArrowRightIcon />
-                </button>
-            </div>
+            {images.length > 1 && (
+                <div className="carousel__controls">
+                    <button
+                        className="carousel__controls__button"
+                        onClick={handleClickLeft}
+                    >
+                        <ArrowLeftIcon />
+                    </button>
+                    <button
+                        className="carousel__controls__button"
+                        onClick={handleClickRight}
+                    >
+                        <ArrowRightIcon />
+                    </button>
+                </div>
+            )}
         </div>
     )
 }
