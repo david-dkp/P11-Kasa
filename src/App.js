@@ -18,6 +18,7 @@ function App() {
                         element={<AccommodationPage />}
                     />
                     <Route path="*" element={<NotFoundPage />} />
+                    <Route path="/not-found" element={<NotFoundPage />} />
                 </Route>
             </Routes>
         </Router>
