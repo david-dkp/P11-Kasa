@@ -81,6 +81,7 @@ footer {
     main {
         max-width: $content-max-width;
         width: 100%;
+        min-height: 80vh;
         margin-inline: auto;
         padding-inline: 1rem;
     }
